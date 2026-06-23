@@ -1,0 +1,31 @@
+# Política editable del portafolio. Ajusta estos valores con tus datos reales.
+pesos_objetivo:
+  Accival Vista: 0.30
+  Accicuenta Mayor Riesgo: 0.40
+  Acciones Dinámico: 0.30
+
+# Correlaciones configurables entre fondos. La diagonal se fuerza a 1.0.
+correlaciones:
+  Accival Vista:
+    Accival Vista: 1.00
+    Accicuenta Mayor Riesgo: 0.35
+    Acciones Dinámico: 0.20
+  Accicuenta Mayor Riesgo:
+    Accival Vista: 0.35
+    Accicuenta Mayor Riesgo: 1.00
+    Acciones Dinámico: 0.45
+  Acciones Dinámico:
+    Accival Vista: 0.20
+    Accicuenta Mayor Riesgo: 0.45
+    Acciones Dinámico: 1.00
+
+umbral_desviacion_rebalanceo: 0.05
+umbral_var_95: 0.04
+nivel_confianza_var: 0.95
+monto_minimo_rebalanceo: 10000
+
+escenarios:
+  base: 1.00
+  optimista: 1.25
+  pesimista: 0.60
+  estres: -1.50

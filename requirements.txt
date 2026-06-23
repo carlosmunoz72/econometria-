@@ -1,0 +1,2 @@
+# Sin dependencias externas obligatorias para permitir ejecución en entornos sin acceso a PyPI.
+# El sistema usa biblioteca estándar de Python para generar CSV/XLSX/PNG reproducibles.
